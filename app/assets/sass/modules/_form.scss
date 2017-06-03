@@ -1,11 +1,36 @@
 .chat-form {
   position: relative;
   height: 20%;
-  top: 560px;
+  top: 78%;
   input {
     height: 50%;
-    width: 100%
+    width: 100%;
+    span {
+      position: relative;
+    }
 
 
+  }
+}
+
+.form-chat {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+
+  form {
+    background-color: rgba(54,54,61,.6);
+    padding: 8%;
+    input {
+      text-align: center;
+      height: 5%;
+      width: 50%;
+      border-radius: 3px;
+      border: none;
+      font-size: 13pt;
+      padding-top: 1%;
+      padding-bottom: 1%;
+    }
   }
 }
