@@ -1,10 +1,12 @@
 .chat-form {
   position: relative;
   height: 20%;
-  top: 78%;
-  input {
+  top: 1%;
+  textarea {
     height: 50%;
     width: 100%;
+    resize: none;
+    
     span {
       position: relative;
     }

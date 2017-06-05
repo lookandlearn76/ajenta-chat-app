@@ -102,7 +102,8 @@ nav ul li a {
   padding-top: 0;
   padding-bottom: 2%;
   width: 50%;
-  margin-top: 2%; }
+  margin-top: 2%;
+  text-decoration: none; }
 
 .btn-btn-wide {
   width: 100%;
@@ -129,8 +130,11 @@ p {
   max-width: 400px;
   right: 1.5%;
   top: 13%;
-  padding: 20px;
+  padding: 1%;
   border-radius: 18px;
+  -webkit-transform: translate(150%, 0);
+  -ms-transform: translate(150%, 0);
+  transform: translate(150%, 0);
   -webkit-transition: transform 200ms ease-out;
   -ms-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out; }
@@ -149,10 +153,10 @@ p {
 .modal:target:before {
   display: block; }
 
-.modal:target .modal-chat {
-  -webkit-transform: translate(-50%, 0);
-  -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0); }
+.modal:target .modal-container {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0); }
 
 .chat-title {
   width: 100%;
@@ -166,14 +170,20 @@ p {
   display: inline;
   margin-left: 4%; }
 
+.chat-box {
+  margin-top: 1%;
+  height: 76%;
+  overflow: scroll; }
+
 .chat-form {
   position: relative;
   height: 20%;
-  top: 78%; }
-  .chat-form input {
+  top: 1%; }
+  .chat-form textarea {
     height: 50%;
-    width: 100%; }
-    .chat-form input span {
+    width: 100%;
+    resize: none; }
+    .chat-form textarea span {
       position: relative; }
 
 .form-chat {
