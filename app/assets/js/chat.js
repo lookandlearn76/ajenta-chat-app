@@ -8,7 +8,7 @@ $("document").ready(function(){
   $("#send").click(function(event){
     event.preventDefault();
     var newMsg = $("#text-enter").val();
-    var userName = localStorage.getItem("userName");
+    var userName = sessionStorage.getItem("userName");
     $("#text-enter").val("");
     $("#send").submit();
     var prevMsg = $(".chat-box").html();
@@ -25,7 +25,7 @@ $("document").ready(function(){
 
 function save() {
   var nameValue = document.getElementById("Name").value;
-  localStorage.setItem('userName', nameValue);
+  sessionStorage.setItem('userName', nameValue);
 };
 //$("chat-form").(function(e){
 //  e.preventDefault();
