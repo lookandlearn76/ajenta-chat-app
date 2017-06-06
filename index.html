@@ -25,7 +25,7 @@
       <section class="form-chat">
         <form action="#modal1" method="Get">
           <input id="Name" type="text" placeholder="Enter your name" name="username" required></input></br>
-          <a href='#modal1'><button class="btn btn-btn-orange"><img src="app/assets/iconsAndImages/chat_orange.png">Start chat</button></a>
+          <a href='#modal1'><button onclick="save()" class="btn btn-btn-orange"><img src="app/assets/iconsAndImages/chat_orange.png">Start chat</button></a>
         </form>
       </section>
 
@@ -37,9 +37,9 @@
           </div>
           <div class="chat-box">
           </div>
-          <form class="chat-form" action="#">
+          <form class="chat-form">
             <textarea id="text-enter" placeholder="Your message here"></textarea>
-            <button id="send" type="Submit" class="btn-btn-orange btn-btn-wide">Send</button>
+            <button id="send" type="submit" class="btn-btn-orange btn-btn-wide">Send</button>
           </form>
         </div>
       </section>

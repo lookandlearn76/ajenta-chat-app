@@ -1,10 +1,40 @@
+$("document").ready(function(){
+  $("#text-enter").keypress(function(e){
+    if(e.which == 13) {
+      e.preventDefault();
+      $("#send").click();
+    }
+  }),
+  $("#send").click(function(event){
+    event.preventDefault();
+    var newMsg = $("#text-enter").val();
+    var userName = localStorage.getItem("userName");
+    $("#text-enter").val("");
+    $("#send").submit();
+    var prevMsg = $(".chat-box").html();
+    if (prevMsg.length > 11){
+      prevMsg = prevMsg + "<br>";
+    }
+    $(".chat-box").html(prevMsg + userName + "<br>" +newMsg);
+    $(".chat-box").scrollTop($(".chat-box").prop("scrollHeight"));
+  })
 
 
-$(function(){
+});
+
+
+function save() {
+  var nameValue = document.getElementById("Name").value;
+  localStorage.setItem('userName', nameValue);
+};
+//$("chat-form").(function(e){
+//  e.preventDefault();
+//
+/*$(function(){
   $("#text-enter").keypress(function(event){
-    /*13 = enter, if enter is pressed..*/
+    //13 = enter, if enter is pressed..//
     if(event.keyCode == 13){
-      /*dont refresh page*/
+      //dont refresh page//
       event.preventDefault();
       var newMsg = $("#text-enter").val();
       $("#text-enter").val("");
@@ -18,12 +48,28 @@ $(function(){
     }
   });
 
-  $()
+  $(function(){
+    $("#text-enter").keypress(function(event){
+      //13 = enter, if enter is pressed..//
+      if(event.keyCode == 13){
+        //dont refresh page//
+        event.preventDefault();
+        var newMsg = $("#text-enter").val();
+        $("#text-enter").val("");
+        $("#send").submit();
+        var prevMsg = $(".chat-box").html();
+        if (prevMsg.length > 11){
+          prevMsg = prevMsg + "<br>";
+        }
+        $(".chat-box").html(prevMsg + newMsg);
+        $(".chat-box").scrollTop($(".chat-box").prop("scrollHeight"));
+      }
+    });
 
   $("#send").click(function(){
     event.preventDefault();
-    var userName = $("#Name").value;
-    /*store msg value before sending msg*/
+    var userName = $(localStorage.setItem($("#Name")));
+    //store msg value before sending msg//
     var newMsg = $("#text-enter").val();
     $("#text-enter").val("");
 
@@ -35,3 +81,4 @@ $(function(){
     $(".chat-box").scrollTop($(".chat-box").prop("scrollHeight"));
   });
 });
+*/
