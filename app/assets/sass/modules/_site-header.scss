@@ -13,14 +13,10 @@
   &__logo__graphic img{
 
     position: absolute;
-    //height: 20px;
     top: 55%;
     transform: translateY(-50%);
     left: 10%;
     opacity: 1;
-  //  transform: translateX(-50%) scale(.8);
-  //  transition: transform .3s ease-out;
-  //  transform-origin: 50% 0;
     z-index: 5;
   }
 }

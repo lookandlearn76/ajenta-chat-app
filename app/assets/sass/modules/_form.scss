@@ -1,40 +1,37 @@
-.chat-form {
-  position: relative;
-  height: 20%;
-  top: 1%;
-  textarea {
-    height: 50%;
-    width: 100%;
-    resize: none;
-    border: none;
-    border-radius: 3px;
-
-    span {
-      position: relative;
-    }
-
-
-  }
-}
-
-.form-chat {
+.chat-form1 {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
   text-align: center;
-
   form {
     background-color: rgba(54,54,61,.6);
     padding: 8%;
+    font-size: 24pt;
     input {
       text-align: center;
       height: 5%;
       width: 50%;
       border-radius: 3px;
       border: none;
-      font-size: 13pt;
+      font-size: 24pt;
       padding-top: 1%;
       padding-bottom: 1%;
+    }
+  }
+}
+
+.chat-form2 {
+  position: relative;
+  height: 20%;
+  textarea {
+    font-size: 16pt;
+    height: 50%;
+    width: 100%;
+    resize: none;
+    border: none;
+    border-radius: 3px;
+    span {
+      position: relative;
     }
   }
 }
