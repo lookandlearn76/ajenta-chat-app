@@ -10,22 +10,29 @@ $("document").ready(function(){
     var newMsg = $("#text-enter").val();
     var userName = sessionStorage.getItem("userName");
     $("#text-enter").val("");
-    $("#send").submit();
-    var prevMsg = $(".chat-box").html();
-    if (prevMsg.length > 11){
-      prevMsg = prevMsg + "<br>";
-    }
-    $(".chat-box").html(prevMsg + userName + "<br>" +newMsg);
-    $(".chat-box").scrollTop($(".chat-box").prop("scrollHeight"));
+    var node1 = document.createElement("div");
+    var node2 = document.createElement("div");
+    var textNode1 = document.createTextNode(userName);
+    var textNode2 = document.createTextNode(newMsg);
+    node1.className = "name-bubble";
+    node2.className = "bubble-container";
+    textNode2.className = "chat-bubble";
+    node1.appendChild(textNode1);
+    node2.appendChild(textNode2);
+    $("#chat-box").append(node1);
+    $("#chat-box").append(node2);
+    $("#chat-box").scrollTop($("#chat-box").prop("scrollHeight"));
   })
 
 
 });
 
 
+
 function save() {
   var nameValue = document.getElementById("Name").value;
   sessionStorage.setItem('userName', nameValue);
+
 };
 //$("chat-form").(function(e){
 //  e.preventDefault();

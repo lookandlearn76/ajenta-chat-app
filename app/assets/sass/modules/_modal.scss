@@ -5,9 +5,9 @@ p {
 .modal-container {
   position: fixed;
   background-color: rgba(255,255,255,.6);
-  width: 22%;
+  width: 21%;
   height: 85%;
-  max-width: 400px;
+//  max-width: 400px;
   right:1.5%;
   top: 13%;
   padding: 1%;
@@ -26,6 +26,7 @@ p {
   position:fixed;
   display: none;
   background-color:rgba(0,0,0,.8);
+  background-color: #86868a;
   top: 0;
   left:0;
   height:100%;
@@ -56,8 +57,36 @@ p {
   margin-left: 4%;
 }
 
-.chat-box {
+#chat-box {
   margin-top: 1%;
   height: 76%;
   overflow: scroll;
+}
+
+.bubble-container{
+//  height: 6%;
+  font-size: 11pt;
+  padding: 2% 3% 1% 3%;
+  float: right;
+//  display: inline-block;
+  margin-bottom: 3%;
+  margin-right: 3%;
+  background-color: #e3fafc;
+  color: #36363d;
+  border-radius: 8px;
+  list-style-type: none;
+  box-shadow: 1px 1px 1px rgba(165, 168, 173, 0.5);
+}
+.chat-bubble {
+  color: #36363d;
+  text-align: center;
+}
+.name-bubble {
+  text-align: right;
+  color: #36363d;
+  list-style-type: none;
+  margin-bottom: 1%;
+  margin-right: 3%;
+  font-size: 11pt;
+  clear:both;
 }

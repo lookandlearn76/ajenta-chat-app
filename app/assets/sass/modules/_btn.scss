@@ -2,7 +2,6 @@
   border-radius: 3px;
   margin: 0;
   border: none;
-  color: white;
   font-size: 15pt;
   padding-top: 0;
   padding-bottom: 2%;
@@ -14,10 +13,12 @@
 .btn-btn-wide {
   width: 100%;
   height: 25%;
-  margin-top: 3%;
+  margin-top: 2%;
 }
 
 .btn-btn-orange {
+  border: none;
+  border-radius: 3px;
   background-color: #f27c36;
   opacity: 1;
   color: white;
